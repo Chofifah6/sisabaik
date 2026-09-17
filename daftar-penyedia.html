@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
     name="description" 
     content="Formulir prototipe untuk mendaftarkan usaha sebagai penyedia makanan di SisaBaik."
-    />
+    >
     <title>Daftar Penyedia | SisaBaik</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -19,8 +19,8 @@
             <nav aria-label="Navigasi Utama">
                 <ul class="nav-list">
                     <li><a href="index.html">Beranda</a></li>
-                    <li><a href="daftar-penyedia.html">Daftar sebagai penyedia</a></li>
-                    <li><a href="tawarkan-makanan.html" aria current="page">Tawarkan makanan</a></li>
+                    <li><a href="daftar-penyedia.html" aria-current="page">Daftar sebagai penyedia</a></li>
+                    <li><a href="tawarkan-makanan.html">Tawarkan makanan</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,7 +31,7 @@
             <h1>Daftar sebagai penyedia SisaBaik</h1>
             <p class="lead">
                 Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke 
-                server, sehingga data tidak akan tersimpan.</p>
+                server, sehingga data tidak akan tersimpan.
             </p>
             <p class="required-note" id="petunjuk-wajib">Kolom bertanda <strong>*</strong> wajib diisi.</p>
         </div>
@@ -55,7 +55,7 @@
                         minlength="3"
                         maxlength="100" 
                         required 
-                        />
+                        >
                     </p>
 
                     <p>
@@ -66,7 +66,7 @@
                             <option value="toko-roti">Toko Roti</option>
                             <option value="katering">Katering</option>
                             <option value="ritel">Toko ritel</option>
-                            <option value="Hotel">Hotel atau penginapan</option>
+                            <option value="hotel">Hotel atau penginapan</option>
                             <option value="lainnya">Lainnya</option>
                         </select>
                     </p>
@@ -76,8 +76,8 @@
                         <textarea 
                         id="deskripsi-usaha" 
                         name="deskripsi-usaha" 
-                        rows="5" 
-                        cols="500"
+                        rows="5"
+                        maxlength="500"
                         aria-describedby="bantuan-deskripsi"
                         ></textarea><br>
                         <small id="bantuan-deskripsi">
@@ -99,7 +99,7 @@
                         minlength="3"
                         maxlength="100" 
                         required 
-                        />
+                        >
                     </p>
 
                     <p>
@@ -112,7 +112,7 @@
                         maxlength="254"
                         aria-describedby="bantuan-email"
                         required 
-                        /><br>
+                        ><br>
                         <small id="bantuan-email">Contoh: nama@usaha.example</small>
                     </p>
 
@@ -127,9 +127,9 @@
                         pattern="[0-9+() ]{8,20}"
                         aria-describedby="bantuan-telepon"
                         required 
-                        /><br>
+                        ><br>
                         <small id="bantuan-telepon">
-                            Gunakan 8-20 kerakter berupa angka, spasi, +, atau tanda kurung.
+                            Gunakan 8-20 karakter berupa angka, spasi, +, atau tanda kurung.
                         </small>
                     </p>
                 </fieldset>
@@ -159,7 +159,7 @@
                         autocomplete="address-level2"
                         maxlength="100" 
                         required 
-                        />
+                        >
                     </p>
 
                     <p>
@@ -171,7 +171,7 @@
                         autocomplete="address-level1"
                         maxlength="100" 
                         required 
-                        />
+                        >
                     </p>
 
                     <p>
@@ -185,7 +185,7 @@
                         pattern="[0-9]{5}"
                         aria-describedby="bantuan-kode-pos"
                         required 
-                        /><br>
+                        ><br>
                         <small id="bantuan-kode-pos">Masukkan tepat lima digit.</small>
                     </p>
                 </fieldset>
@@ -199,7 +199,7 @@
                         name="persetujuan"
                         value="setuju"
                         required
-                        />
+                        >
                         <label for="persetujuan">
                             Saya menyatakan bahwa informasi latihan ini tidak menggunakan
                             data pribadi atau usaha yang sebenarnya. *
@@ -226,7 +226,7 @@
 
     <footer>
         <div class="site-footer">
-        <p>&copy; 2026 SisaBaik - Proyek pembelajaran Pengambangan Web.</p>
+        <p>&copy; 2026 SisaBaik - Proyek pembelajaran Pengembangan Web.</p>
         </div>
     </footer>
   </body>

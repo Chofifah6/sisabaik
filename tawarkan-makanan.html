@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
     name="description" 
     content="Formulir prototipe untuk mencatat makanan berlebih yang akan ditawarkan melalui"
-    />
+    >
     <title>Tawarkan Makanan | SisaBaik</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -54,7 +54,7 @@
                     minlength="3"
                     maxlength="120" 
                     required 
-                    />
+                    >
                 </p>
 
                 <p> 
@@ -100,7 +100,7 @@
                     max="1000"
                     step="1"
                     required
-                    />
+                    >
                 </p>
 
                 <p>
@@ -125,7 +125,7 @@
                     max="10000000"
                     step="500"
                     required
-                    />
+                    >
                 </p>
 
                 <fieldset class="form-section"> 
@@ -137,7 +137,7 @@
                         name="jenis_penawaran" 
                         value="diskon"
                         required
-                        />
+                        >
                         <label for="jenis-diskon">Dijual dengan harga diskon</label>
                     </p>
 
@@ -147,7 +147,7 @@
                         id="jenis-donasi" 
                         name="jenis_penawaran" 
                         value="donasi"
-                        />
+                        >
                         <label for="jenis-donasi">Disalurkan tanpa biaya</label>
                     </p>
                 </fieldset>
@@ -163,7 +163,7 @@
                     step="500"
                     aria-describedby="bantuan-harga"
                     required
-                    /><br>
+                    ><br>
                     <small id="bantuan-harga">
                         Isi 0 jika makanan disalurkan tanpa biaya. Perbandingan dengan
                         harga normal akan divalidasi menggunakan JavaScript pada chapter berikutnya.
@@ -181,7 +181,7 @@
                     id="batas-pengambilan" 
                     name="batas_pengambilan"
                     required
-                    />
+                    >
                 </p>
 
                 <p>
@@ -199,19 +199,19 @@
                 <fieldset class="form-section">
                     <legend>Informasi alergen yang diketahui</legend>
                     <p>
-                        <input type="checkbox" id="alergen-gluten" name="alergen" value="gluten" />
+                        <input type="checkbox" id="alergen-gluten" name="alergen" value="gluten">
                         <label for="alergen-gluten">Gluten</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="alergen-susu" name="alergen" value="susu" />
+                        <input type="checkbox" id="alergen-susu" name="alergen" value="susu">
                         <label for="alergen-susu">Susu</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="alergen-telur" name="alergen" value="telur" />
+                        <input type="checkbox" id="alergen-telur" name="alergen" value="telur">
                         <label for="alergen-telur">Telur</label>
                     </p>
                     <p>
-                        <input type="checkbox" id="alergen-kacang" name="alergen" value="kacang" />
+                        <input type="checkbox" id="alergen-kacang" name="alergen" value="kacang">
                         <label for="alergen-kacang">Kacang</label>
                     </p>
                 </fieldset>
@@ -239,7 +239,7 @@
                     name="konfirmasi_keamanan"
                     value="terkonfirmasi"
                     required
-                    />
+                    >
                     <label for="konfirmasi-keamanan">
                         Saya memastikan contoh makanan ini masih layak konsumsi dan
                         informasi kondisi serta alergennya telah ditulis dengan jujur. *
@@ -249,7 +249,7 @@
 
             <p class="form-action">
                 <button class="button" type="submit">Kirim penawaran latihan</button>
-                <button class="button" button-secondary type="reset">Kosongkan formulir</button>
+                <button class="button button-secondary" type="reset">Kosongkan formulir</button>
             </p>
         </form>
 
