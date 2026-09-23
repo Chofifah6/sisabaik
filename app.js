@@ -55,6 +55,7 @@ function renderKartu(data, wadah, status, keranjang) {
         artikel.innerHTML = `
         <div class="offer-card__visual" aria-hidden="true"></div>
         <div class="offer-card__content">
+            <span class="badge">${item.labelKategori}</span>
             <h3>${item.nama}</h3>
             <p class="offer-card__meta">${item.penyedia} · ${item.stok} ${item.satuan}</p>
             <p class="offer-card__price"><del>${rupiah.format(item.hargaNormal)}</del>
