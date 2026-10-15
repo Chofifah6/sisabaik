@@ -2,23 +2,28 @@
 
 SisaBaik adalah proyek berkembang pada mata kuliah Pengembangan Web. Aplikasi ini dirancang untuk membantu penyedia memulihkan nilai stok makanan berlebih melalui penjualan dengan harga khusus atau penyaluran, sekaligus membantu masyarakat memperoleh makanan yang lebih terjangkau dan mengurangi limbah pangan.
 
-## Capaian Chapter 3
+## Capaian Chapter 7
 
-- Mempertahankan semantic HTML dan formulir aksesibel dari Chapter 2.
-- Menerapkan CSS cascade, box model, dan costom properties.
-- Menggunakan Grid untuk kartu penawaran dan bagian halaman.
-- Membangun layout mobile-first dengan media queries.
-- Memeriksa kontras, fokus keyboard, reflow, dan konsistensi visual.
+- Membangun REST API menggunakan Express.js yang terhubung ke basis data PostgreSQL (`sisabaik_dev`).
+- Mengimplementasikan operasi CRUD penuh pada entitas `penawaran` dan modul transaksi pembuatan `pesanan`.
+- Menggunakan transaksi PostgreSQL (`BEGIN`, `COMMIT`, `ROLLBACK`) untuk memastikan konsistensi stok dan mencegah race condition saat pemesanan beruntun.
+- Menerapkan validasi input yang ketat pada layer aplikasi (termasuk penanganan ID berformat string dan pencegahan SQL Injection).
+- Menangani error penanganan protokol HTTP sesuai standar (`400 Bad Request`, `404 Not Found`, `409 Conflict`, `413 Payload Too Large`, `415 Unsupported Media Type`, dan `500 Internal Server Error`).
+- Memperbarui kontrak payload request dari `namaPemesan` menjadi `emailPembeli`.
 
-## Halaman
-- 'index.html' : halaman informasi SisaBaik.
-- 'daftar-penyedia.html' : formulir pendaftaran penyedia.
-- 'tawarkan-makanan.html' : formulir penawaran makanan berlebih.
-- 'styles.css' : sistem visual dan layout responsif untuk seluruh halaman.
+## Prasyarat & Lingkungan
 
-## Menjalankan proyek
+- Node.js: v18.x atau lebih baru
+- PostgreSQL: v14.x atau lebih baru
+- Basis data `sisabaik_dev` sudah dikonfigurasi dan diisi dengan skema basis data serta data awal (seed) dari Chapter 6.
+- Berkas `.env` telah dikonfigurasi sesuai pengaturan koneksi basis data lokal.
 
-Buka folder proyek di Visual Studio Code, lalu tampilkan 'index.html' menggunakan Live Preview atau browser. Pada tahap ini, formulir hanya merupakan prototipe HTML: data belum disimpan ke server atau basis data.
+## Cara Menjalankan Aplikasi
+
+1. Pastikan PostgreSQL service sudah berjalan dan database `sisabaik_dev` sudah siap.
+2. Jalankan server pengembangan:
+   ```bash
+   npm run dev
 
 ## Integritas akademik
 
