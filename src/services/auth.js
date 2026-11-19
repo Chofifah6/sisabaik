@@ -33,7 +33,6 @@ export async function login(data) {
     data.kataSandi,
     row?.kata_sandi_hash ?? hashDummy,
   );
-
   if (!row || !row.aktif || !row.kata_sandi_hash || !cocok) {
     throw new HttpError(
       401,
@@ -41,7 +40,6 @@ export async function login(data) {
       "Email atau kata sandi tidak valid.",
     );
   }
-
   return {
     accessToken: buatToken(row),
     tokenType: "Bearer",
